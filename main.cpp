@@ -1,7 +1,4 @@
 #include <iostream>
-#include <cstring>
-
-
 
 std::string generatePassword(int length) {
     if (length <= 5) {
@@ -11,6 +8,7 @@ std::string generatePassword(int length) {
     std::string password = "";
     std::string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!§$%&/()=?}[]{}";
     const char* charsetArray = charset.c_str();
+    
 
     for (int i = 0; i < length; i++) {
         int index = rand() % charset.length();
@@ -22,14 +20,10 @@ std::string generatePassword(int length) {
 
 int main() {
     int length;
-    std::string password = "";
     std::cout << "How long should the password be?\n";
     std::cin >> length;
 
-    password = generatePassword(length);
-
-    std::cout << "Password\n" << password;
-
+    std::cout << "Your password:\n" << generatePassword(length);
 
     return 0;
 }
