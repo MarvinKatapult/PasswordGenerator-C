@@ -7,7 +7,7 @@ std::string generatePassword(int length) {
     }
 
     std::string password = "";
-    std::string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!§$%&/()=?}[]{}";
+    std::string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!?[]{}()";
     const char* charsetArray = charset.c_str();
     
     for (int i = 0; i < length; i++) {
