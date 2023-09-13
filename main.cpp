@@ -4,11 +4,11 @@ std::string generatePassword(int length) {
     if (length <= 5) {
         return "Passwort muss mindestens 5 Bustaben haben";
     }
-    
+
     srand(time(NULL));
 
     std::string password = "";
-    std::string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!?[]{}()";
+    std::string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!?[]{}()!?[]{}()!?[]{}()!?[]{}()";
     const char* charsetArray = charset.c_str();
     
     for (int i = 0; i < length; i++) {
