@@ -1,7 +1,7 @@
 #include <iostream>
 
 std::string generatePassword(int length) {
-    
+    srand(time(NULL));
     if (length <= 5) {
         return "Passwort muss mindestens 5 Bustaben haben";
     }
